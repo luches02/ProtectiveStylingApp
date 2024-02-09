@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Lessons";
+}
+<h1 style="text-align:center" class="display-4">Get Hair Braiding Lessons</h1>
+
+<div style="text-align:center">
+    <img src="~/img/braids2.jpeg" class="circular-image" />
+    <img src="~/img/hairtypes.jpeg" class="circular-image" />
+    <img src="~/img/stitch2.jpeg" class="circular-image" />
+    <img src="~/img/hairtypes2.jpeg" class="circular-image" />
+    <img src="~/img/twistsM.jpeg" class="circular-image" />
+</div>
+
+<p style="text-align:center">Since this is something I am passionate about, I am willing to offer lessons on  how to do the styles discussed and more!</p>
+<p style="text-align:center">Enter the duration of one on one tutoring you would need, in hours, and hit the button to calculate your total cost.</p>
+
+<h3 style="text-align:center">Tutoring Services Cost Calculator</h3>
+<br />
+
+
+
+<form id="calculatorForm">
+    <div style="text-align:center">
+        <label for="hours">Hours Needed: </label>
+        <input type="number" id="hours" name="hours" min="1" required/>
+    </div>
+    <br />
+    <br />
+    <div style="text-align:center">
+        <label for="hourlyRate">Hourly Rate: </label>
+        <input type="text" id="hourlyRate" name="hourlyRate" value="20" readonly />
+    </div>
+    <br />
+    <br />
+    <div style="text-align:center">
+        <style>
+            #calculateButton {
+                margin-left: 70px; 
+            }
+        </style>
+        <button type="button" id="calculateButton">Calculate</button>
+    </div>
+    <br />
+    <br />
+    <div style="text-align:center">
+        <label for="total">Total Cost: </label>
+        <input type="text" id="total" name="total" readonly />
+    </div>
+</form>
+<br />
+<br />
+<footer class="border-top footer text-muted">
+    <div class="container" style="text-align:center">
+        &copy; 2024 - ProtectiveStylingApp | Built by Oluchi Ochulo | Email: ochulosusan02@gmail.com - <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    </div>
+</footer>
